@@ -1,3 +1,4 @@
+-- Original seed data
 insert into meetups
   (title, country, launch_week, start_at, is_published)
 values
@@ -23,3 +24,16 @@ values
     500,
     'A realtime error message'
   );
+
+-- Custom seed data for our app schema
+-- Note: In a real application, user_profiles would be populated via triggers when users sign up
+-- This is just for demonstration purposes
+
+-- Sample posts data (assuming some users exist)
+-- insert into app.posts (user_id, title, content, slug, published)
+-- values
+--   ('00000000-0000-0000-0000-000000000001', 'Welcome to My Blog', 'This is my first blog post!', 'welcome-to-my-blog', true),
+--   ('00000000-0000-0000-0000-000000000001', 'Getting Started with Supabase', 'Supabase is an amazing platform...', 'getting-started-supabase', true),
+--   ('00000000-0000-0000-0000-000000000002', 'Draft Post', 'This is a draft post', 'draft-post', false);
+
+-- Note: Uncomment and modify the above inserts with actual user IDs after users are created
